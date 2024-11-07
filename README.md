@@ -9,6 +9,7 @@ Today in lab you will create your own repo using the [code-201-lab5a Template Re
 You are being given starter code for today, in the `index.html` and `app.js` files inside of this directory. The success of your code will be determined by whether it passes tests that are in the `tests.js` file. You do not need to do anything with `tests.js`, though you should take a look at it to see how it works.
 
 Steps to create your repo using the template:
+
   1. Click the green `Use this template` button
   1. Name your repo
   1. Click the green `Create repository from template` button
@@ -26,7 +27,8 @@ This lab will have starter code provided. Work with your instructor directly to 
 
 ### Submission Instructions
 
-Make sure your *main* branch is up to date with your most recent code. 
+Make sure your *main* branch is up to date with your most recent code
+
 - In the submission area, paste a link to your GitHub repo for this project.
 - Add a comment to this Canvas submission with answers to the following questions.
   - How did this go, overall?
