@@ -90,12 +90,26 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  let totalSum = sumArr[0]; // Start with the first element in the array
 
+  // Use the sum() function to add each element in the array to totalSum
+  for (let i = 1; i < sumArr.length; i++) {
+    totalSum = sum(totalSum, sumArr[i])[0];
+  }
+
+  // Format the output string
+  const resultString = `${sumArr.join(',')} was passed in as an array of numbers, and ${totalSum} is their sum.`;
+
+  // Return the array as specified
+  return [totalSum, resultString];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
+testSumArray(testArray);
 
-// testSumArray(testArray);
+// Here is the test for sumArray(); uncomment it to run it
+
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
