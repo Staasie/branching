@@ -8,7 +8,7 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+function sum(a, b) {
  let first = a + b;
  return [first, `The sum of ${a} and ${b} is ${first}.`];
 }
@@ -27,7 +27,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function multiply(a, b) {
   let sec = a * b;
   return [sec, `The product of ${a} and ${b} is ${sec}.`];
 }
@@ -50,16 +50,12 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-  // Calculate the sum of a, b, and c
+function sumAndMultiply(a, b, c) {
   let sumAB = sum(a, b)[0];
   let totalSum = sum(sumAB, c)[0];
-
-  // Calculate the product of a, b, and c
   let productAB = multiply(a, b)[0];
   let totalProduct = multiply(productAB, c)[0];
 
-  // Return the array with required format
   return [
     totalSum,
     totalProduct,
@@ -67,13 +63,8 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     `The product of ${a} and ${b} and ${c} is ${totalProduct}.`
   ];
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4, 7, 5);
-
-// Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
-
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -87,28 +78,18 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4];
 
-function sumArray(sumArr) { //eslint-disable-line
-  let totalSum = sumArr[0]; // Start with the first element in the array
-
-  // Use the sum() function to add each element in the array to totalSum
+function sumArray(sumArr) { 
+  let totalSum = sumArr[0]; 
   for (let i = 1; i < sumArr.length; i++) {
     totalSum = sum(totalSum, sumArr[i])[0];
   }
-
-  // Format the output string
   const resultString = `${sumArr.join(',')} was passed in as an array of numbers, and ${totalSum} is their sum.`;
 
-  // Return the array as specified
   return [totalSum, resultString];
 }
-
 // Here is the test for sumArray(); uncomment it to run it
-testSumArray(testArray);
-
-// Here is the test for sumArray(); uncomment it to run it
-
 testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -124,12 +105,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+let testray = [2, 3, 4];
+function multiplyArray(multArr) { 
+  const productAB = multiply(multArr[0], multArr[1])[0];
+  const totalProduct = multiply(productAB, multArr[2])[0];
+  const resultString = `The numbers ${multArr.join(',')} have a product of ${totalProduct}.`;
+  return [totalProduct, resultString];
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
