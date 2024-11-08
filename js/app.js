@@ -28,9 +28,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  let second = a +b;
-  return [second, `the sum of ${a} and ${b} is ${second}`]
+  let sec = a * b;
+  return [sec, `The product of ${a} and ${b} is ${sec}.`];
 }
+
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
